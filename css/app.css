@@ -10,6 +10,23 @@ body {
   padding: 1em;
 }
 
+/* filters */
+.btn:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.btn:active,
+.btn.is-checked {
+  background-color: #28F;
+}
+
+.btn.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
 /* grid */
 
 .grid {
@@ -56,7 +73,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  width: 60%;
+  width: 80%;
 }
 
 .overlay h4 {
