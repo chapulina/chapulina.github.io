@@ -19,7 +19,7 @@ $(document).ready(function () {
   // Store filter for each group
   var filters = {};
 
-  $('.filters').on( 'click', '.btn', function() {
+  $('.filters').on( 'click tap', '.btn', function() {
     var $this = $(this);
     var $buttonGroup = $this.parents('.btn-group');
     var filterGroup = $buttonGroup.attr('data-filter-group');
@@ -31,7 +31,7 @@ $(document).ready(function () {
   // change is-checked class on buttons
   $('.btn-group').each(function(i, buttonGroup) {
     var $buttonGroup = $(buttonGroup);
-    $buttonGroup.on('click', 'button', function() {
+    $buttonGroup.on('click tap', 'button', function() {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
       $(this).addClass('is-checked');
     });

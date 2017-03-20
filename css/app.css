@@ -10,6 +10,12 @@ body {
   padding: 1em;
 }
 
+/* header */
+.logo {
+  max-width: 3em;
+  float: right;
+}
+
 /* filters */
 .btn:hover {
   background-color: #8CF;
@@ -34,9 +40,15 @@ body {
 }
 
 .grid-item {
-  width: 30%;
+  width: 100%;
   padding: 0.5em;
   min-width: 20em;
+}
+
+@media only screen and (min-width: 480px) {
+  .grid-item {
+    width: 30%;
+  }
 }
 
 .grid-item {
