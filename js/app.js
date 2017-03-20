@@ -1,4 +1,4 @@
-/* Isotope for layout filtering */
+var custom_click = $.support.touch ? 'tap' : 'click';
 
 $(document).ready(function () {
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
   // Store filter for each group
   var filters = {};
 
-  $('.filters').on( 'click tap', '.btn', function() {
+  $('.filters').on(custom_click, '.btn', function() {
     var $this = $(this);
     var $buttonGroup = $this.parents('.btn-group');
     var filterGroup = $buttonGroup.attr('data-filter-group');
@@ -31,7 +31,7 @@ $(document).ready(function () {
   // change is-checked class on buttons
   $('.btn-group').each(function(i, buttonGroup) {
     var $buttonGroup = $(buttonGroup);
-    $buttonGroup.on('click tap', 'button', function() {
+    $buttonGroup.on(custom_click, 'button', function() {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
       $(this).addClass('is-checked');
     });
