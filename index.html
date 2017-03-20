@@ -63,20 +63,35 @@
 
       <!-- ROSCon 2016 -->
       <div class="grid-item sixteen conference video english">
-        ROSCon 2016
-        <img src="images/roscon2016.png" alt="ROSCon 2016">
+        <a data-toggle="modal" data-target="#roscon2016" href="">
+          <img class="thumb" src="images/roscon2016.png" alt="ROSCon 2016">
+          <div class="overlay">
+            <h4>ROSCon 2016</h4>
+            <p>What’s new in Gazebo? Upgrading your simulation user experience!</p>
+          </div>
+        </a>
       </div>
 
       <!-- CppCon 2015 -->
       <div class="grid-item fifteen conference video english">
-        CppCon 2015
-        <img src="images/cppcon2015.png" alt="CppCon 2015">
+        <a data-toggle="modal" data-target="#cppcon2015" href="">
+          <img class="thumb" src="images/cppcon2015.png" alt="CppCon 2015">
+          <div class="overlay">
+            <h4>CppCon 2015</h4>
+            <p>C++ in Open Source Robotics</p>
+          </div>
+        </a>
       </div>
 
       <!-- ICRA 2014 -->
       <div class="grid-item fourteen conference article video english">
-        ICRA 2014
-        <img src="images/icra2014.png" alt="ICRA 2014">
+        <a data-toggle="modal" data-target="#icra2014" href="">
+          <img class="thumb" src="images/icra2014.png" alt="ICRA 2014">
+          <div class="overlay">
+            <h4>ICRA 2014</h4>
+            <p>Support Changes During Online Human Motion Imitation by a Humanoid Robot using Task Specification</p>
+          </div>
+        </a>
       </div>
 
       <div class="grid-item">
@@ -86,14 +101,106 @@
 
     </div>
 
+    <!-- DIALOGS -->
+
+    <!-- ROSCon 2016 -->
+    <div id="roscon2016" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">ROSCon 2016</h4>
+          </div>
+          <div class="modal-body">
+            <p>What’s new in Gazebo? Upgrading your simulation user experience!</p>
+            <iframe
+              src="https://player.vimeo.com/video/187699565?color=ffffff&byline=0&portrait=0"
+              width="500"
+              height="281"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CppCon 2015 -->
+    <div id="cppcon2015" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">CppCon 2015</h4>
+          </div>
+          <div class="modal-body">
+            <p>C++ in Open Source Robotics</p>
+            <iframe
+              src="https://www.youtube.com/embed/PXdQwFSJwQ8"
+              width="500"
+              height="281"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ICRA 2014 -->
+    <div id="icra2014" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">ICRA 2014</h4>
+          </div>
+          <div class="modal-body">
+            <p>Support Changes During Online Human Motion Imitation by a Humanoid Robot using Task Specification</p>
+
+            <p><a href="documents/ICRA2014.pdf" target="_blank">Paper PDF</a></p>
+
+            <iframe
+              src="https://www.youtube.com/embed/jPKbGeOfT8k"
+              width="500"
+              height="281"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- JS at the end for performance -->
+
+    <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.2.0.slim.min.js"
       integrity="sha256-qLAv0kBAihcHZLI3fv3WITKeRsUX27hd6upBBa0MSow="
       crossorigin="anonymous"
     ></script>
+
+    <!-- Isotope -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- imagesLoaded -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- local JS -->
     <script src="js/app.js"></script>
 
   </body>
