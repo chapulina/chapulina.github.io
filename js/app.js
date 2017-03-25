@@ -6,6 +6,7 @@ $(document).ready(function () {
   let $grid = $('.grid').isotope({
     itemSelector: '.grid-item',
     percentPosition: true,
+    sortBy : 'random',
     masonry: {
       columnWidth: 30,
     }
