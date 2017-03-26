@@ -1,4 +1,5 @@
 var custom_click = $.support.touch ? 'tap' : 'click';
+var filter = [];
 
 $(document).ready(function () {
 
@@ -17,33 +18,73 @@ $(document).ready(function () {
     $grid.isotope('layout');
   });
 
-  // Store filter for each group
-  var filters = {};
+  // On checkbox change
+  $('#options').on('change', function(jQEvent) {
+    var $checkbox = $(jQEvent.target);
 
-  $('.filters').on(custom_click, '.btn', function() {
-    var $this = $(this);
-    var $buttonGroup = $this.parents('.btn-group');
-    var filterGroup = $buttonGroup.attr('data-filter-group');
-    filters[filterGroup] = $this.attr('data-filter');
-    var filterValue = concatValues(filters);
-    $grid.isotope({filter: filterValue});
+    manageCheckbox($checkbox);
+
+    var join = filter.join('')
+    $grid.isotope({ filter: join });
   });
 
-  // change is-checked class on buttons
-  $('.btn-group').each(function(i, buttonGroup) {
-    var $buttonGroup = $(buttonGroup);
-    $buttonGroup.on(custom_click, 'button', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $(this).addClass('is-checked');
-    });
-  });
+  // Check / uncheck boxes and fill filter
+  function manageCheckbox($checkbox) {
+    var checkbox = $checkbox[0];
 
-  // flatten object by concatting values
-  function concatValues(obj) {
-    var value = '';
-    for (var prop in obj) {
-      value += obj[prop];
+    // All
+    var isAll = $checkbox.hasClass('all');
+    if (isAll) {
+      // Reset filter
+      filter = []
+
+      // Check if unchecked, never uncheck
+      $checkbox.prop('checked', true)
+      $checkbox.parent().addClass('active');
+
+      // Uncheck all others
+      $checkbox.parent().siblings().children('input').prop('checked', false);
+      $checkbox.parent().siblings('label').removeClass('active');
     }
-    return value;
+
+    // Check if it's already in the filter
+    var index = $.inArray(checkbox.value, filter);
+
+    // Not all
+    if (!isAll) {
+
+      if (checkbox.checked) {
+
+        // Check this
+        $checkbox.parent().addClass('active');
+
+        // Uncheck all
+        $checkbox.parent().siblings().children('input.all').prop('checked', false);
+        $checkbox.parent().siblings('label.all').removeClass('active');
+
+        // Add to filter
+        if (index === -1) {
+          filter.push(checkbox.value);
+        }
+      }
+      else {
+
+        // Uncheck this
+        $checkbox.parent().removeClass('active');
+
+        // Remove from filter
+        filter.splice(index, 1);
+
+        // If unchecked the last box, check all
+        let others = $checkbox.parent().siblings('label').children()
+        for (var i =0; i < others.length; ++i) {
+          if (others[i].checked)
+            return
+        }
+
+        $checkbox.parent().siblings().children('input.all').prop('checked', true);
+        $checkbox.parent().siblings('label.all').addClass('active');
+      }
+    }
   }
 })

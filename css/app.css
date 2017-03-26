@@ -17,20 +17,9 @@ body {
 }
 
 /* filters */
-.btn:hover {
-  background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
-}
 
-.btn:active,
-.btn.is-checked {
-  background-color: #28F;
-}
-
-.btn.is-checked {
-  color: white;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+input {
+  display: none;
 }
 
 /* grid */

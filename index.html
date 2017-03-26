@@ -37,32 +37,47 @@
       </div>
     </div>
 
-    <!-- FILTERS -->
-    <div class="filters btn-toolbar" role="toolbar">
-
-      <!-- MEDIA -->
-      <div class="btn-group btn-group-sm mr-2" role="group" data-filter-group="media">
-        <button type="button" class="btn btn-secondary is-checked" data-filter="">all</button>
-        <button type="button" class="btn btn-secondary" data-filter=".video">video</button>
-        <button type="button" class="btn btn-secondary" data-filter=".audio">audio</button>
-        <button type="button" class="btn btn-secondary" data-filter=".article">article</button>
-      </div>
-
-      <!-- YEAR -->
-      <div class="btn-group btn-group-sm mr-2" role="group" data-filter-group="year">
-        <button type="button" class="btn btn-secondary is-checked" data-filter="">all</button>
-        <button type="button" class="btn btn-secondary" data-filter=".fourteen">2014</button>
-        <button type="button" class="btn btn-secondary" data-filter=".fifteen">2015</button>
-        <button type="button" class="btn btn-secondary" data-filter=".sixteen">2016</button>
-      </div>
-
-      <!-- LANGUAGE -->
-      <div class="btn-group btn-group-sm mr-2" role="group" data-filter-group="language">
-        <button type="button" class="btn btn-secondary is-checked" data-filter="">all</button>
-        <button type="button" class="btn btn-secondary" data-filter=".english">English</button>
-        <button type="button" class="btn btn-secondary" data-filter=".portugues">português</button>
-      </div>
-
+    <div id="options" class="btn-group">
+      <label class="btn btn-default active all">
+        <input type="checkbox" autocomplete="off" value="" class="all" checked/>
+        all
+      </label>
+      <label class="btn btn-default video">
+        <input type="checkbox" autocomplete="off" value=".video" />
+        video
+      </label>
+      <label class="btn btn-default audio">
+        <input type="checkbox" autocomplete="off" value=".audio"/>
+        audio
+      </label>
+      <label class="btn btn-default article">
+        <input type="checkbox" autocomplete="off" value=".article"/>
+        article
+      </label>
+      <label class="btn btn-default conference">
+        <input type="checkbox" autocomplete="off" value=".conference"/>
+        conference
+      </label>
+      <label class="btn btn-default fourteen">
+        <input type="checkbox" autocomplete="off" value=".fourteen"/>
+        2014
+      </label>
+      <label class="btn btn-default fifteen">
+        <input type="checkbox" autocomplete="off" value=".fifteen"/>
+        2015
+      </label>
+      <label class="btn btn-default sixteen">
+        <input type="checkbox" autocomplete="off" value=".sixteen"/>
+        2016
+      </label>
+      <label class="btn btn-default english">
+        <input type="checkbox" autocomplete="off" value=".english"/>
+        English
+      </label>
+      <label class="btn btn-default portugues">
+        <input type="checkbox" autocomplete="off" value=".portugues"/>
+        português
+      </label>
     </div>
 
 
