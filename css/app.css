@@ -8,6 +8,8 @@ html {
 body {
   font-family: sans-serif;
   padding: 1em;
+  background-color: #000;
+  color: #fff;
 }
 
 /* header */
@@ -16,10 +18,32 @@ body {
   float: right;
 }
 
+.title {
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+}
+
 /* filters */
 
 input {
   display: none;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #000;
+  border-color: #fff;
+  border-radius: 0;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.btn-default.active:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 /* grid */
@@ -30,7 +54,7 @@ input {
 
 .grid-item {
   width: 100%;
-  padding: 0.5em;
+  padding: 1em;
   min-width: 20em;
 }
 
@@ -67,6 +91,7 @@ input {
 }
 
 .overlay {
+  color: #fff;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
