@@ -127,6 +127,22 @@ html.can-touch .btn-default.active {
   opacity: 1;
 }
 
+html.can-touch .grid-item .thumb {
+  opacity: 1;
+}
+
+html.can-touch .grid-item .overlay {
+  opacity: 0;
+}
+
+html.can-touch .grid-item.in-view .thumb {
+  opacity: 0.3;
+}
+
+html.can-touch .grid-item.in-view .overlay {
+  opacity: 1;
+}
+
 /* dialogs */
 .modal {
   text-align: center;
