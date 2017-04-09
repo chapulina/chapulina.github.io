@@ -29,7 +29,9 @@ input {
   display: none;
 }
 
-.btn-default {
+.btn-default,
+.btn-default:active:hover,
+.btn-default:focus {
   color: #fff;
   background-color: #000;
   border-color: #fff;
@@ -37,7 +39,6 @@ input {
 }
 
 .btn-default:hover,
-.btn-default:focus,
 .btn-default:active,
 .btn-default.active,
 .btn-default.active:hover {
