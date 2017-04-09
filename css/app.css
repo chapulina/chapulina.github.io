@@ -45,6 +45,8 @@ input {
   color: #000;
   background-color: #fff;
   border-color: #fff;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 /* grid */
