@@ -49,6 +49,16 @@ input {
   -webkit-box-shadow: none;
 }
 
+html.can-touch .btn-default:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+html.can-touch .btn-default.active {
+  color: #000;
+  background-color: #fff;
+}
+
 /* grid */
 
 .grid {

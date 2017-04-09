@@ -1,7 +1,14 @@
-var custom_click = $.support.touch ? 'tap' : 'click';
 var filter = [];
 
 $(document).ready(function () {
+
+  // first time user touches the screen
+  document.addEventListener('touchstart', function addtouchclass(e){
+    // add "can-touch" class to document root using classList API
+    document.documentElement.classList.add('can-touch')
+    // de-register touchstart event
+    document.removeEventListener('touchstart', addtouchclass, false)
+  }, false)
 
   // Init Isotope
   let $grid = $('.grid').isotope({
