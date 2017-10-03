@@ -47,6 +47,13 @@ document.addEventListener('touchstart', function addtouchclass(e){
 
 $(document).ready(function () {
 
+  // Links directly to open modals
+  $('.modal').each(function() {
+    if (window.location.href.indexOf('#'+$(this)[0].id) != -1) {
+      $(this).modal('show');
+    }
+  })
+
   // Init Isotope
   let $grid = $('.grid').isotope({
     itemSelector: '.grid-item',
