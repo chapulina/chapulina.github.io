@@ -27,6 +27,21 @@ body {
   padding-right: 0.5em;
 }
 
+.cv, .cv:hover {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  float: right;
+  font-size: 0.8em;
+  font-weight: 1000;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  margin: 0.1em;
+  line-height: 2em;
+}
+
 /* filters */
 
 input {
