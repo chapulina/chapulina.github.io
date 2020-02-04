@@ -119,6 +119,10 @@
         <input type="checkbox" autocomplete="off" value=".nineteen"/>
         2019
       </label>
+      <label class="btn btn-default twenty">
+        <input type="checkbox" autocomplete="off" value=".twenty"/>
+        2020
+      </label>
       <label class="btn btn-default english">
         <input type="checkbox" autocomplete="off" value=".english"/>
         english
@@ -136,6 +140,21 @@
 
     <!-- GRID -->
     <div class="grid">
+
+      <!-- ROS Developers Podcast - jan 2020 -->
+      <div class="grid-item twenty interview audio english robotics">
+        <a data-toggle="modal" data-target="#rosdevpodcastign" href="">
+          <img
+            class="thumb"
+            src="images/rosdevpodcastign.gif"
+            alt="ROS Developers Podcast: Ignition"
+          >
+          <div class="overlay">
+            <h4>ROS Developers Podcast</h4>
+            <p>Ignition Gazebo ROS simulator with Louise Poubel</p>
+          </div>
+        </a>
+      </div>
 
       <!-- ROSCon 2019 - oct 2019 -->
       <div class="grid-item nineteen presentation english robotics video">
@@ -507,6 +526,30 @@
     </div>
 
     <!-- DIALOGS -->
+
+    <!-- ROS Developers Podcast: Ignition -->
+    <div id="rosdevpodcastign" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">ROS Developers Podcast: Ignition</h4>
+          </div>
+          <div class="modal-body">
+            <p>On January 2020 I answered lots of questions about Ignition at the ROS Developers Podcast.</p>
+            <p>
+              <a
+                target="_blank"
+                href="https://www.theconstructsim.com/68-ignition-gazebo-ros-simulator-with-louise-poubel/">
+                Ignition Gazebo ROS simulator with Louise Poubel
+              </a>
+            </p>
+
+            <iframe src="https://open.spotify.com/embed-podcast/episode/0RR1bwNEzyBx2Ya5d7vHZx" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ROSCon 2019 -->
     <div id="roscon2019" class="modal fade" role="dialog">
