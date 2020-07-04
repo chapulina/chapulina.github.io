@@ -25,6 +25,7 @@ body {
   padding-bottom: 0.5em;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  width: 100%;
 }
 
 .cv, .cv:hover {
