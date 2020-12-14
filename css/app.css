@@ -192,6 +192,14 @@ html.can-touch .grid-item.in-view .overlay {
   box-shadow: 10px 10px 5px grey;
 }
 
+.embedded {
+  width: 100%;
+  height: 281px;
+  float: none;
+  clear: both;
+  margin: 2px auto;
+}
+
 /* tweets */
 
 blockquote.twitter-tweet {
