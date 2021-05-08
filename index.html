@@ -123,6 +123,10 @@
         <input type="checkbox" autocomplete="off" value=".twenty"/>
         2020
       </label>
+      <label class="btn btn-default twentyone">
+        <input type="checkbox" autocomplete="off" value=".twentyone"/>
+        2021
+      </label>
       <label class="btn btn-default english">
         <input type="checkbox" autocomplete="off" value=".english"/>
         english
@@ -140,6 +144,36 @@
 
     <!-- GRID -->
     <div class="grid">
+
+      <!-- Open Source 101 - mar 2021 -->
+      <div class="grid-item twentyone video english robotics">
+        <a data-toggle="modal" data-target="#os1012021" href="">
+          <img
+            class="thumb"
+            src="images/os1012021.gif"
+            alt="Open Source 101"
+          >
+          <div class="overlay">
+            <h4>Open Source 101</h4>
+            <p>Open Source C++ Libraries for Robotics</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- SV awards - dec 2020 -->
+      <div class="grid-item twenty video english robotics">
+        <a data-toggle="modal" data-target="#svawards" href="">
+          <img
+            class="thumb"
+            src="images/svawards.png"
+            alt="SVR 'Good Robot' Industry Awards"
+          >
+          <div class="overlay">
+            <h4>SVR 'Good Robot' Industry Awards</h4>
+            <p>Champion Award</p>
+          </div>
+        </a>
+      </div>
 
       <!-- How to start a robot revolution - nov 2020 -->
       <div class="grid-item twenty video english robotics">
@@ -612,6 +646,58 @@
     </div>
 
     <!-- DIALOGS -->
+
+    <!-- Open Source 101 -->
+    <div id="os1012021" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Open Source C++ Libraries for Robotics</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              On March 2021 I gave an overview of all Ignition libraries at Open Source 101.
+            </p>
+
+            <div class="embedded">
+              <embed
+                src="https://www.youtube.com/embed/VHffp5kYLEg"
+                wmode="transparent"
+                type="video/mp4"
+                width="100%" height="100%"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              >
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SV Awards -->
+    <div id="svawards" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">SVR ‘Good Robot’ Industry Awards</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              It was an honor to receive the champion award from Silicon Valley Robotics in 2020!
+            </p>
+
+            <p>
+              See the article in
+              <a href="https://svrobo.org/louise-poubel-wins-champion-award-in-svr-good-robot-industry-awards/" target="_blank">Louise Poubel wins Champion Award in SVR ‘Good Robot’ Industry Awards</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- How to start a robot revolution -->
     <div id="opensourcestories" class="modal fade" role="dialog">
